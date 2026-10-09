@@ -6,6 +6,9 @@ public class LibraryService {
         if (availableCopies <= 0) {
             throw new BookUnavailableException("'" + title + "' has no copies available.");
         }
+        /**
+         * Decrements the number of available copies by 1.
+         */
         return availableCopies - 1;
     }
 

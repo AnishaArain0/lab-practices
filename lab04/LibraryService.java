@@ -9,7 +9,9 @@ public class LibraryService {
         return availableCopies - 1;
     }
 
-    // Task 2 helper method
+    /**
+     * Helper method to find a member by their ID.
+     */
     public static String findMemberById(int id) {
         return "Member #" + id;
     }
